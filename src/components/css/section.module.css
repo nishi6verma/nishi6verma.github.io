@@ -1,0 +1,389 @@
+.container {
+    width: 100%;
+    height: calc(100vh - 36.48px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sectionHeader {
+    width: 100%;
+    height: 62.5px;
+    border-bottom: 2px solid #242731;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.sectionName {
+    width: max-content;
+    padding: 7px 0;
+    border-bottom: 2px solid #3772FF;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.sectionHeadInfo {
+    padding: 2.5px 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #191B20;
+    border-radius: 12.25px;
+}
+
+.walletIconDiv {
+    height: 100%;
+}
+
+.walletIcon {
+    height: 14px;
+}
+
+.walletBalance {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.tier {
+    height: 23px;
+    padding: 4px 8px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.240494042634964px;
+    text-align: center;
+    color: #3772FF;
+    background-color: #A3E3FF;
+    border-radius: 5px;
+}
+
+.sectionInfo {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.allTodoLists {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    overflow-y: scroll;
+}
+
+.todoList {
+    width: 287px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.listHead {
+    width: 100%;
+    padding: 6px 15px;
+    border-radius: 12px;
+    background-color: #242731;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.listItem {
+    position: relative;
+    width: 100%;
+    min-height: 116px;
+    background-color: #191B20;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 12px;
+}
+
+.itemHead {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemH12 {
+    /* width: calc(100% - 41px); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.itemH12 > input {
+    flex-shrink: 1;
+    width: calc(100% - 41px);
+    color: white;
+    border-radius: 4px;
+}
+
+.listItem > textarea {
+    flex-shrink: 1;
+    width: 100%;
+    color: white;
+}
+
+.listIcon {
+    height: 24px;
+}
+
+.itemName {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.itemAddAction {
+    flex-shrink: 0;
+    width: 27px;
+    height: 27px;
+    border-radius: 12px;
+    background-color: #353945;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemAddAction:hover {
+    cursor: pointer;
+}
+
+.addIcon {
+    width: 13px;
+}
+
+.itemEditAction {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #353945;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemEditAction:hover {
+    cursor: pointer;
+}
+
+.editIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.itemDesc {
+    width: 100%;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.listEnd {
+    width: 30%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #3772FF;
+}
+
+.addListHead {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: white;
+    border-radius: 8px;
+}
+
+.editActive {
+    position: absolute;
+    width: 4px;
+    height: 102px;
+    background-color: #000AFF;
+    border-radius: 16px;
+    left: 0;
+    top: 7px;
+    bottom: 7px;
+    animation: 500ms activeGrow forwards ease-in-out;
+}
+
+@keyframes activeGrow {
+    0% {
+        height: 0;
+        top: 58px;
+        bottom: 58px;
+    }
+    85% {
+        height: 106px;
+        top: 5px;
+        bottom: 5px;
+    }
+    100% {
+        height: 102px;
+        top: 7px;
+        bottom: 7px;
+    }
+}
+
+.addTodoList {
+    width: 287px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: 1px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 15px;
+    border-radius: 12px;
+    background-color: #242731;
+    color: #6C6C6C;
+}
+
+.editTodoListDiv {
+    flex-shrink: 0;
+    width: 298px;
+    height: 100%;
+    padding: 1rem;
+    padding-top: 0;
+    border-left: 2px solid #242731;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    animation: 500ms openEdit forwards ease-in-out;
+}
+
+@keyframes openEdit {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.editHead {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.backArrowDiv {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backArrowDiv:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #242731;
+}
+
+.editHeadText {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.editTitle {
+    width: 100%;
+    padding: 15px;
+    background-color: #242731;
+    color: #ffffff;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.editDesc {
+    width: 100%;
+    height: 110px;
+    padding: 15px;
+    background-color: #242731;
+    color: #ffffff;
+    border-radius: 12px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.editSaveBtn {
+    width: 100%;
+    height: 34px;
+    background-color: #3772FF;
+    color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editSaveBtn:hover {
+    cursor: pointer;
+}

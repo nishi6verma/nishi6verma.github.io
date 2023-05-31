@@ -1,0 +1,237 @@
+.container {
+    width: 250px;
+    height: calc(100vh - 36.48px);
+    padding-left: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+    border-right: 2px solid #242731;
+}
+
+.upper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.nameBar {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.nameGrp {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Poppins;
+    gap: 0.5rem;
+}
+
+.dp {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3772FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.closeSidebar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.closeSidebar:hover {
+    cursor: pointer;
+    background-color: #242731;
+}
+
+.sidebarSections {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.sidebarSection {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0.75rem;
+    border-radius: 12px;
+}
+
+.sidebarSection:hover {
+    cursor: pointer;
+    background-color: #353945;
+}
+
+.sidebarSectionActive {
+    background-color: #353945;
+}
+
+.sectionIconDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionIcon {
+    height: 17px;
+}
+
+.sectionName {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    /* line-height: 24px; */
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.lower {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.accInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.userInfo {
+    width: 95px;
+    padding: 0.25rem;
+    background-color: #353945;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 10px;
+}
+
+.userInfo:hover {
+    cursor: pointer;
+}
+
+.userInitial {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #3772FF;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 9px;
+    letter-spacing: -0.02em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accBalance {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.buy {
+    width: 95px;
+    height: 37px;
+    border-radius: 10px;
+    background-color: #A3E3FF;
+    color: #3772FF;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy:hover {
+    cursor: pointer;
+}
+
+.lowerLast {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.languageIconDiv {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.languageIcon {
+    height: 21px;
+}
+
+.toggle {
+    height: 25px;
+    width: 58px;
+    border-radius: 12px;
+    padding: 4px;
+    background-color: #353945;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.themeIcon {
+    height: 15px;
+}
+
+.light {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #3772FF;
+}
